@@ -1,0 +1,130 @@
+body,ul{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+
+
+i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 56px;
+	height: 66px;
+	background: url(../images/ico.png) no-repeat;
+	cursor: pointer;
+	position: absolute;
+}
+.ico-left{
+	background-position:-196px 0;
+}
+.ico-left:hover{
+	background-position:-130px 0;
+}
+.ico-right{
+	background-position:-64px 0;
+}
+.ico-right:hover{
+	background-position:0 0;
+}
+
+/*arrow*/
+.slide-arrow i{
+	top:50%;
+	margin-top: -33px;
+}
+.slide-arrow .ico-left{
+	left: 0;
+}
+.slide-arrow .ico-right{
+	right: 0;
+}
+
+/*arrow vertical*/
+.arrow-vertical i{
+	left:50%;
+	margin-left:-28px;
+	z-index: 5;
+}
+.arrow-vertical .ico-left{
+	top:0;
+	transform:rotate(90deg);
+}
+.arrow-vertical .ico-right{
+	bottom:0;
+	transform:rotate(90deg);
+}
+
+/*box*/
+.slide-box{
+	width: 800px;
+	// height: 500px;
+	margin:20px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.list{
+	/*width: 100%;*/
+	height: 500px;
+	overflow: hidden;
+	transition: all 800ms;
+}
+.list li{
+	float: left;
+	width: 800px;
+	height: 500px;
+}
+.list img{
+	max-height: 100%;
+	max-width: 100%;
+	margin:0 auto;
+	display: block;
+}
+
+/*vertical list*/
+.list.slide-vertical{
+	position: relative;
+}
+.list.slide-vertical li{
+	transition: all 800ms;
+	position: absolute;
+	z-index: 1;
+	top:0;
+}
+
+/*dot nav*/
+.slide-nav{
+	text-align: center;
+	margin-top: 20px;
+}
+.slide-nav span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background: #999;
+	border-radius: 100%;
+	margin:0 5px;
+	/*cursor: pointer;*/
+	color: #fff;
+	font-size: 12px;
+	font-style:'microsoft yahei';
+	text-align: center;
+}
+.slide-nav span.active{
+	background: red;
+}
+
+/*dot nav vertical*/
+.slide-nav.nav-vertical{
+	position: absolute;
+	right:20px;
+	top:170px;
+	z-index: 3;
+}
+.slide-nav.nav-vertical span{
+	display: block;
+	margin:10px auto;
+}

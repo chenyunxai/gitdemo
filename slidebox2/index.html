@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>slideBox</title>
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+	<div id="slidebox1" class="slide-box"></div>
+
+	<div id="slidebox2" class="slide-box"></div>
+	<div id="slidebox3" class="slide-box"></div>
+
+	<script src="js/lib/jquery-1.11.3.min.js"></script>
+	<script src="js/page/plugin.js"></script>
+	<script>
+	   
+	    $(function (){
+	     
+			$('#slidebox1').slide({
+				arrImg:['images/bg1.jpg','images/bg2.jpg','images/bg3.jpg','images/bg4.jpg','images/bg5.jpg'],
+				// arrImg:['images/1.png','images/2.png','images/3.png','images/4.png'],
+				timeOut: {
+				},
+				// mode: 'HERIZONTAL_MODE',
+				// mode: 'VERTICAL_MODE',
+				mode: 'FADE_MODE',
+				isNav: true
+			});
+
+			$('#slidebox2').slide({
+				arrImg:['images/bg1.jpg','images/bg2.jpg','images/bg3.jpg','images/bg4.jpg','images/1.png'],
+				timeOut: {
+					auto: true,
+					interval: 3000
+				},
+				mode: 'HERIZONTAL_MODE',
+				isNav: true,
+			});
+
+			$('#slidebox3').slide({
+				arrImg:['images/bg1.jpg','images/bg2.jpg','images/bg3.jpg','images/bg4.jpg','images/1.png'],
+				timeOut: {
+					auto: true,
+					interval: 3000
+				},
+				mode: 'VERTICAL_MODE',
+				isNav: true,
+			});
+	    		    	
+	    })
+
+	</script>
+
+</body>
+</html>
