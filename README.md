@@ -2,6 +2,7 @@
 jQuery轮播图插件 
 
 1.插件的初始化
+
 //'#slidebox'为初始化插件的dom元素id
 
   $('#slidebox').slide({
